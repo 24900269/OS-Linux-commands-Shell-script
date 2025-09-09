@@ -890,28 +890,8 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
-cat forinfile.sh 
-```bash
-#!/bin/bash
-# reading values from a file
-file="cities"
-for state in `cat $file`
-do
-echo "Visit beautiful $file“
-done
-```
-$ chmod 777 forinfile.sh
-$ cat cities
-Hyderabad
-Alampur
-Basara
-Warangal
-Adilabad
-Bhadrachalam
-Khammam
 
-## OUTPUT
-
+<img width="362" height="247" alt="Screenshot 2025-09-09 101614" src="https://github.com/user-attachments/assets/fb9e89bb-6fb0-41cb-b5d7-dcf916e2537d" />
 
 cat forctype.sh 
 ```bash
@@ -925,6 +905,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+<img width="418" height="224" alt="Screenshot 2025-09-09 102516" src="https://github.com/user-attachments/assets/39262bfb-37c6-4cbc-9519-a3a5c88fefc2" />
 
 cat forctype1.sh 
 ```bash
@@ -938,6 +919,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+<img width="351" height="224" alt="Screenshot 2025-09-09 104016" src="https://github.com/user-attachments/assets/8637b08d-6561-485f-95eb-e16541ca1ed3" />
 
 cat fornested1.sh 
 ```bash
@@ -957,144 +939,9 @@ $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
  ## OUTPUT
 
+<img width="527" height="407" alt="Screenshot 2025-09-09 104438" src="https://github.com/user-attachments/assets/e4767224-5384-4ee4-80db-9e6872c9fc03" />
  
-cat forbreak.sh 
-```bash
-#!/bin/bash
-# breaking out of a for loop
-for var1 in 1 2 3 4 5
-do
-if [ $var1 -eq 3 ]
-then
-break
-fi
-echo "Iteration number: $var1"
-done
-echo "The for loop is completed“
-```
-## OUTPUT
 
-$ chmod 755 forbreak.sh
- 
-$ ./forbreak.sh 
- 
-cat forbreak.sh 
-```bash
-#!/bin/bash
-# breaking out of a for loop
-for var1 in 1 2 3 4 5
-do
-if [ $var1 -eq 3 ]
-then
-continue
-fi
-echo "Iteration number: $var1"
-done
-echo "The for loop is completed“
-```
-
- 
-$ chmod 755 forcontinue.sh
- 
-$ ./forcontinue.sh 
-## OUTPUT
- 
-cat exread.sh 
-```bash
-#!/bin/bash
-# testing the read command
-echo -n "Enter your name: "
-read name
-echo "Hello $name, welcome to my program. "
- ```
- 
-$ chmod 755 exread.sh 
- 
-$ ./exread.sh 
-## OUTPUT
-
-
- cat exread1.sh
-```bash
-#!/bin/bash
-# testing the read command
-read -p "Enter your name: " name
-echo "Hello $name, welcome to my program. “
-``` 
-$ chmod 755 exread1.sh 
-
-## OUTPUT
-
-
-
-$ ./exread1.sh 
- 
-cat funcex.sh
-```bash
-#!/bin/bash
-# trying to access script parameters inside a function
-function func {
-echo $[ $1 * $2 ]
-}
-if [ $# -eq 2 ]
-then
-value=`func $1 $2`
-echo "The result is $value"
-else
-echo "Usage: badtest1 a b"
-fi
-```
-## OUTPUT
- ./funcex.sh 
-
- 
- ./funcex.sh 1 2
-
- 
-cat argshift.sh
-```bash
-#!/bin/bash 
- while (( "$#" )); do 
-  echo $1 
-  shift 
-done
-```
-$ chmod 777 argshift.sh
-
-## OUTPUT
-$ ./argshift.sh 1 2 3
- 
- cat argshift1.sh
-```bash
- #/bin/bash 
- # store arguments in a special array 
-args=("$@") 
-# get number of elements 
-ELEMENTS=${#args[@]} 
- # echo each element in array  
-# for loop 
-for (( i=0;i<$ELEMENTS;i++)); do 
-    echo ${args[${i}]} 
-done
-```
-$ chmod 777 argshift.sh
-## OUTPUT
-$ ./argshift.sh 1 2 3
- 
-cat argshift.sh
-```bash
-#!/bin/bash 
-set -x 
-while (( "$#" )); do 
-  echo $1 
-  shift 
-done
-set +x
-```
-## OUTPUT
- ./argshift.sh 1 2 3
- 
- 
 cat > nc.awk
 ```bash
 BEGIN{}
@@ -1124,7 +971,8 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ <img width="453" height="372" alt="Screenshot 2025-09-09 105400" src="https://github.com/user-attachments/assets/f418ecc1-6692-4db1-acce-368feac46e95" />
+
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1150,7 +998,8 @@ else
 	echo "Number is NOT palindrome"
 fi
 ```
-## OUTPUT 
+### OUTPUT 
+<img width="454" height="183" alt="Screenshot 2025-09-09 105556" src="https://github.com/user-attachments/assets/4d17396f-e12c-4a5a-b2f4-6eee10d37daf" />
 
 
 # RESULT:
